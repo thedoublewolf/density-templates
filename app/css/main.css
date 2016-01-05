@@ -5820,13 +5820,21 @@ button.close {
 body {
   background: #E8F1F2; }
 
+h1 {
+  color: #275DAD;
+  font-family: "Lato", sans-serif; }
+
+h2 {
+  color: #373F51;
+  font-family: "Lato", sans-serif; }
+
 .btn {
-  background: #265DAD;
+  background: #275DAD;
   color: #E8F1F2;
   font-family: "Lato", sans-serif; }
 
 .btn:hover {
-  background: #3474d2;
+  background: #3574d2;
   color: #E8F1F2; }
 
 .navbar {
@@ -5834,7 +5842,7 @@ body {
   .navbar .navbar-brand img {
     width: 100px; }
   .navbar ul.nav li a, .navbar ul.nav li a:visited {
-    color: #265DAD !important;
+    color: #275DAD !important;
     font-family: "Lato", sans-serif; }
   .navbar ul.nav li a:hover, .navbar ul.nav li a:active {
     color: #density-blue !important;
@@ -5845,5 +5853,16 @@ body {
   .navbar .navbar-form input {
     width: 300px;
     border-radius: 2px; }
+
+.login {
+  width: 350px; }
+  .login .form-control {
+    width: 300px;
+    border-radius: 2px;
+    margin-bottom: 10px; }
+  .login .btn {
+    margin-bottom: 10px; }
+  .login a {
+    color: #58A3AF; }
 
 /*# sourceMappingURL=main.css.map */
