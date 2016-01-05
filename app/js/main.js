@@ -1,5 +1,4 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
-// Make sure shim jQuery first
 'use strict';
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
@@ -9,6 +8,50 @@ var _jquery = require('jquery');
 var _jquery2 = _interopRequireDefault(_jquery);
 
 require('bootstrap-sass');
+
+(0, _jquery2['default'])('.tab-policies').click(function () {
+  (0, _jquery2['default'])('.tab-policies').addClass('active');
+  (0, _jquery2['default'])('.tab-terms').removeClass('active');
+  (0, _jquery2['default'])('.tab-notes').removeClass('active');
+  (0, _jquery2['default'])('.tab-analysis').removeClass('active');
+  (0, _jquery2['default'])('#policies').removeClass('hidden');
+  (0, _jquery2['default'])('#terms').addClass('hidden');
+  (0, _jquery2['default'])('#notes').addClass('hidden');
+  (0, _jquery2['default'])('#analysis').addClass('hidden');
+});
+
+(0, _jquery2['default'])('.tab-terms').click(function () {
+  (0, _jquery2['default'])('.tab-terms').addClass('active');
+  (0, _jquery2['default'])('.tab-notes').removeClass('active');
+  (0, _jquery2['default'])('.tab-analysis').removeClass('active');
+  (0, _jquery2['default'])('.tab-policies').removeClass('active');
+  (0, _jquery2['default'])('#terms').removeClass('hidden');
+  (0, _jquery2['default'])('#notes').addClass('hidden');
+  (0, _jquery2['default'])('#analyis').addClass('hidden');
+  (0, _jquery2['default'])('#policies').addClass('hidden');
+});
+
+(0, _jquery2['default'])('.tab-notes').click(function () {
+  (0, _jquery2['default'])('.tab-notes').addClass('active');
+  (0, _jquery2['default'])('.tab-analysis').removeClass('active');
+  (0, _jquery2['default'])('.tab-policies').removeClass('active');
+  (0, _jquery2['default'])('.tab-terms').removeClass('active');
+  (0, _jquery2['default'])('#notes').removeClass('hidden');
+  (0, _jquery2['default'])('#analysis').addClass('hidden');
+  (0, _jquery2['default'])('#policies').addClass('hidden');
+  (0, _jquery2['default'])('#terms').addClass('hidden');
+});
+
+(0, _jquery2['default'])('.tab-analysis').click(function () {
+  (0, _jquery2['default'])('.tab-analysis').addClass('active');
+  (0, _jquery2['default'])('.tab-policies').removeClass('active');
+  (0, _jquery2['default'])('.tab-terms').removeClass('active');
+  (0, _jquery2['default'])('.tab-notes').removeClass('active');
+  (0, _jquery2['default'])('#analysis').removeClass('hidden');
+  (0, _jquery2['default'])('#policies').addClass('hidden');
+  (0, _jquery2['default'])('#terms').addClass('hidden');
+  (0, _jquery2['default'])('#notes').addClass('hidden');
+});
 
 },{"bootstrap-sass":2,"jquery":3}],2:[function(require,module,exports){
 /*!

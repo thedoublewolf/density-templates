@@ -149,12 +149,12 @@
 
     </form> <!-- NEW QUOTE FORM -->
 
-  </div> <!-- FORM BACKGROUND -->
+  </div> <!-- FORM BACKGROUND (NEW QUOTE FORM)-->
 
   <hr> <!-- this is seperating each template -->
 
   <!-- QUOTE TERMS -->
-  <div class="form-background">
+  <div id="quote-terms" class="form-background">
     <h1>Quote 10</h1>
 
     <h3>Agency</h3>
@@ -165,274 +165,282 @@
     <br>
     <br>
 
-    <ul class="nav nav-tabs">
-      <li role="presentation" class="active"><a href="#policies">Policies</a></li>
-      <li role="presentation"><a href="#terms">Terms</a></li>
-      <li role="presentation"><a href="#notes">Notes</a></li>
-      <li role="presentation"><a href="#analysis">Analyis</a></li>
-    </ul>
+    <div class="quote-terms">
+      <ul class="nav nav-tabs">
+        <li role="presentation" class="tab-policies active"><a href="#quote-terms">Policies</a></li>
+        <li role="presentation" class="tab-terms"><a href="#quote-terms">Terms</a></li>
+        <li role="presentation" class="tab-notes"><a href="#quote-terms">Notes</a></li>
+        <li role="presentation" class="tab-analysis"><a href="#quote-terms">Analyis</a></li>
+      </ul>
 
-    <div id="tabs">
-      <div id="policies">
-        <div id="accordion">
+      <div id="tabs">
+        <!-- TAB-POLICIES -->
+        <div id="policies">
+
           <h3> Cargo &nbsp &nbsp &nbsp Total Premium: 25,000.00 </h3>
-            <div>
-              <form method="POST">
-                <table>
-                  <tr>
-                    <input type="hidden" name="csrfmiddlewaretoken" value="s3PNw1mniJVL12Qv9h6r1OoAvRdKr3mM" />
-                    <th> Carrier </th>
-                    <th> MGA </th>
-                    <th> Broker </th>
-                  </tr>
-                  <tr>
-                    <td>
-                      <select id="id_carrier" name="carrier">
-                        <option value=""></option>  
-                        <option value="1" selected="selected">Carrier ABC</option>
-                        <option value="2">Carrier XYZ</option>
-                      </select>
-                    </td>
-                    <td>MGA &nbsp </td>
-                    <td>Broker</td>
-                  </tr>
-                </table>
-                <br>
-                <table>
-                  <tr>
-                    <th> Coverage Type </th>
-                    <th> Effective Date </th>
-                    <th> Minimum Earned Premium </th>
-                    <th> Short Rate </th>
-                  </tr>
-                  <tr>
-                    <td><select id="id_pol_type" name="pol_type">
-<option value=""></option>
-<option value="1" selected="selected">Cargo</option>
-<option value="2">Windstorm</option>
-<option value="3">Truckers Auto</option>
-<option value="4">General Liability</option>
-</select></td>
-                    <td><input id="id_pol_effective_date" name="pol_effective_date" type="text" value="2015-07-30" /></td>
-                    <td><input id="id_min_earned_premium" name="min_earned_premium" step="0.01" type="number" value="0.00" /></td>
-                    <td><input id="id_short_rate" name="short_rate" type="checkbox" /></td>
-                  </tr>
-                </table>
-                <br>
-                <table>
-                  <tr>
-                    <th> Total Premium </th>
-                    <th> Doc Stamp Fees </th>
-                    <th> Taxes </th>
-                    <th> Broker Fees </th>
-                    <th></th>
-                    <th></th>
-                  </tr> <!--
-                  <tr>
-                    <td><input type='input' name='total_premium' value='25,000.00' /></td>
-                    <td><input type='input' name='doc_stamp_fees' value='0.00' /></td>
-                    <td><input type='input' name='taxes' value='0.00' /></td>
-                    <td><input type='input' name='broker_fees' value='0.00' /></td>
-                  </tr> -->
-                  <tr>
-                    <td><input id="id_total_premium" name="total_premium" step="0.01" type="number" value="25000.00" /></td>
-                    <td><input id="id_doc_stamp_fees" name="doc_stamp_fees" step="0.01" type="number" value="0.00" /></td>
-                    <td><input id="id_taxes" name="taxes" step="0.01" type="number" value="0.00" /></td>
-                    <td><input id="id_broker_fees" name="broker_fees" step="0.01" type="number" value="0.00" /></td>
-                  </tr>
-                </table>
-                <br>
-                <table>
-                  <tr>
-                    <td><input type="hidden" name="current_policy" id="current_policy" value="12" /></td>
-                    <td><input type="submit" name="submit" value="Edit Policy" /></td>
-                    <td> &nbsp &nbsp &nbsp </td>
-                  <td><a href="% url "policy_delete" item_id=policy.id %">Delete Policy</a></td>
-                  </tr>
-                </table>
-                </form>
-                </div>
+
+          <div>
+            <form method="POST">
+              <table>
+                <tr>
+                  <input type="hidden" name="csrfmiddlewaretoken" value="s3PNw1mniJVL12Qv9h6r1OoAvRdKr3mM" />
+                  <th> Carrier </th>
+                  <th> MGA </th>
+                  <th> Broker </th>
+                </tr>
+                <tr>
+                  <td>
+                    <select id="" name="carrier">
+                      <option value=""></option>  
+                      <option value="1" selected="selected">Carrier ABC</option>
+                      <option value="2">Carrier XYZ</option>
+                    </select>
+                  </td>
+                  <td>MGA &nbsp </td>
+                  <td>Broker</td>
+                </tr>
+              </table>
+              <br>
+              <table>
+                <tr>
+                  <th> Coverage Type </th>
+                  <th> Effective Date </th>
+                  <th> Minimum Earned Premium </th>
+                  <th> Short Rate </th>
+                </tr>
+                <tr>
+                  <td>
+                    <select id="" name="pol_type">
+                      <option value=""></option>
+                      <option value="1" selected="selected">Cargo</option>
+                      <option value="2">Windstorm</option>
+                      <option value="3">Truckers Auto</option>
+                      <option value="4">General Liability</option>
+                    </select>
+                  </td>
+                  <td><input id="" name="pol_effective_date" type="text" value="2015-07-30" /></td>
+                  <td><input id="" name="min_earned_premium" step="0.01" type="number" value="0.00" /></td>
+                  <td><input id="" name="short_rate" type="checkbox" /></td>
+                </tr>
+              </table>
+              <br>
+              <table>
+                <tr>
+                  <th> Total Premium </th>
+                  <th> Doc Stamp Fees </th>
+                  <th> Taxes </th>
+                  <th> Broker Fees </th>
+                  <th></th>
+                  <th></th>
+                </tr> <!--
+                <tr>
+                  <td><input type='input' name='total_premium' value='25,000.00' /></td>
+                  <td><input type='input' name='doc_stamp_fees' value='0.00' /></td>
+                  <td><input type='input' name='taxes' value='0.00' /></td>
+                  <td><input type='input' name='broker_fees' value='0.00' /></td>
+                </tr> -->
+                <tr>
+                  <td><input id="" name="total_premium" step="0.01" type="number" value="25000.00" /></td>
+                  <td><input id="" name="doc_stamp_fees" step="0.01" type="number" value="0.00" /></td>
+                  <td><input id="" name="taxes" step="0.01" type="number" value="0.00" /></td>
+                  <td><input id="" name="broker_fees" step="0.01" type="number" value="0.00" /></td>
+                </tr>
+              </table>
+              <br>
+              <table>
+                <tr>
+                  <td><input type="hidden" name="current_policy" id="current_policy" value="12" /></td>
+                  <td><input type="submit" name="submit" value="Edit Policy" /></td>
+                  <td> &nbsp &nbsp &nbsp </td>
+                  <td><a href="">Delete Policy</a></td>
+                </tr>
+              </table>
+            </form>
+          </div>
                 
-              
-            
+          <h3> New Policy </h3>
+
+          <div>
+            <form method="POST">
+              <table>
+                <tr>
+                  <input type="hidden" name="csrfmiddlewaretoken" value="s3PNw1mniJVL12Qv9h6r1OoAvRdKr3mM" />
+                  <th> Carrier </th>
+                  <th> MGA </th>
+                  <th> Broker </th>
+                </tr>
+                <tr>
+                  <td>
+                    <select id="" name="carrier">
+                      <option value="" selected="selected"></option>
+                      <option value="1">Carrier ABC</option>
+                      <option value="2">Carrier XYZ</option>
+                    </select>
+                  </td>
+                  <td>MGA</td>
+                  <td>Broker</td>
+                </tr>
+              </table>
+              <br>
+              <table>
+                <tr>
+                  <th> Coverage Type </th>
+                  <th> Effective Date </th>
+                  <th> Minimum Earned Premium </th>
+                  <th> Short Rate </th> 
+                </tr>
+                <tr>
+                  <td>
+                    <select id="" name="pol_type">
+                      <option value="" selected="selected"></option>
+                      <option value="1">Cargo</option>
+                      <option value="2">Windstorm</option>
+                      <option value="3">Truckers Auto</option>
+                      <option value="4">General Liability</option>
+                    </select>
+                  </td>
+                  <td><input id="" name="pol_effective_date" type="text" /></td> <!-- Needs class 'hasDatePicker' -->
+                  <td><input id="" name="min_earned_premium" step="0.01" type="number" value="0" /></td>
+                  <td><input id="" name="short_rate" type="checkbox" /></td>
+                </tr>
+              </table>
+              <br>
+              <table>
+                <tr>
+                  <th> Total Premium </th>
+                  <th> Doc Stamp Fees </th>
+                  <th> Taxes </th>
+                  <th> Broker Fees </th>
+                </tr>
+                <tr>
+                  <td><input id="" name="total_premium" step="0.01" type="number" /></td>
+                  <td><input id="" name="doc_stamp_fees" step="0.01" type="number" /></td>
+                  <td><input id="" name="taxes" step="0.01" type="number" /></td>
+                  <td><input id="" name="broker_fees" step="0.01" type="number" /></td>
+                </tr>
+              </table>
+              <br>
+              <table>
+                <tr>
+                  <td></td>
+                  <td><input type="submit" name="submit" value="Add Policy" /></td>
+                </tr>
+              </table>
+            </form>
+          </div>
+
+        </div> <!-- TAB-POLICIES -->
+    
+        <!-- TAB-TERMS -->
+        <div id="terms" class="hidden">
+          <h1>Quote Terms</h1>
+          <form method="POST">
+            <input type="hidden" name="csrfmiddlewaretoken" value="s3PNw1mniJVL12Qv9h6r1OoAvRdKr3mM" />
+            <table id="quote" class="table">
+              <tr>
+                <td>Total Premium: $25,000.00</td>
+                <td>Down Payment: <br> $<input id="" name="default_dp" step="0.01" type="number" value="6250.00" /> 25.0%</td>
+                <td>Amount Financed: $ 18,750.00</td>
+              </tr>
+              <tr>
+                <td>First Due Date: <input id="" name="first_due_date" type="text" value="2015-08-29" /></td>
+                <td>Number of Installments: <input id="" min="0" name="num_of_install" type="number" value="9" /></td>
+                <td>Payment Schedule: 
+                  <select id="" name="payment_schedule">
+                    <option value="Monthly" selected="selected">Monthly</option>
+                    <option value="Quarterly">Quarterly</option>
+                    <option value="Semi-annually">Semi-annually</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td>Interest Rate: 7.00% </td>
+                <td>Finance Charge: $ 551.13</td>
+                <td>Setup Fee: <input id="" name="setup_fee" step="0.01" type="number" value="0.00" /></td>
+              </tr>
+              <tr>
+                <td>Payments: $ 2,144.57</td>
+                <td>Total of Payments: $ 19,301.13</td>
+                <td>Agency Compensation: $78.73</td>
+              </tr>
+              <tr>
+                <td>Override Minimums: <input id="" name="override_mep" type="checkbox" /></td>
+                <td>Equal Installments: <input id="" name="equal_payments" type="checkbox" /></td>
+              </tr>
+            </table>
+            <input type="submit" name="submit" value="Edit Terms" />
+          </form>
           
-        
-      
+          <h3>Interest Rate Detail</h3>
+          <div id="rateAccordion">
+            <table id="rates" class="table">
+              <form method="POST">
+                <input type="hidden" name="csrfmiddlewaretoken" value="s3PNw1mniJVL12Qv9h6r1OoAvRdKr3mM" />
+                <tr>
+                  <td>Buy Rate: <input id="" name="buy_rate" step="0.01" type="number" value="6.00" />%</td>
+                  <td>Agency Compensation: <input id="" name="agency_comp" step="0.01" type="number" value="1.00" />%</td>
+                  <td>Broker Compensation: <input id="" name="broker_comp" step="0.01" type="number" value="0.00" />%</td>
+                  <td>Program Compensation: <input id="" name="program_comp" step="0.01" type="number" value="0.00" />%</td>
+                </tr>
+                <tr>
+                  <td>$472.40</td>
+                  <td>$78.73</td>
+                  <td>$0.00</td>
+                  <td>$0.00</td>
+                </tr>
+                <input type="submit" name="submit" value="Edit Rates" />
+              </form>
+            </table>
+          </div>
+        </div> <!-- TAB-TERMS -->
 
-      <h3> New Policy </h3>
+        <!-- TAB-NOTES -->
+        <div id="notes" class="hidden">
+          <h3>Notes</h3>
+          <form method="POST">
+            <input type="hidden" name="csrfmiddlewaretoken" value="s3PNw1mniJVL12Qv9h6r1OoAvRdKr3mM" />
+            <table>
+              <tr>
+                <td> 7/30/2015 &nbsp &nbsp </td>
+                <td> Hoot &amp; holler </td>
+            <!-- Order these by time, only show date unless created today -->
+              </tr>
+              <tr>
+                <td><input type="hidden" name="quote" id="" value="10" /></td>
+              </tr>
+            </table>
+            <br>
+            <textarea id="note" name="note" cols="60" rows="4"></textarea>
+            <br>
+            <input type="submit" name="submit" id="" value="Add Note" >
+          </form>
+        </div>
+
+        <!-- TAB-ANALYSIS -->
+        <div id="analysis" class="hidden">
+          <h3>Analysis</h3>
+          <p>Graphs and such go here</p>
+          
+          <div style="height:200px;">
+            <div id="curve_chart"></div>
+            <div id="gauge_div"></div>
+            <!-- Try putting the JavaScript to create it below here so it can load
+              after the rest is loaded-->
+          </div>
+        </div>
+      </div> <!-- TABS -->
+
+      <br>
+
       <div>
-      <form method="POST">
-      <table>
-        <tr>
-          <input type="hidden" name="csrfmiddlewaretoken" value="s3PNw1mniJVL12Qv9h6r1OoAvRdKr3mM" />
-          <th> Carrier </th>
-          <th> MGA </th>
-          <th> Broker </th>
-        </tr>
-        <tr>
-          <td><select id="id_carrier" name="carrier">
-<option value="" selected="selected"></option>
-<option value="1">Carrier ABC</option>
-<option value="2">Carrier XYZ</option>
-</select></td>
-          <td>MGA</td>
-          <td>Broker</td>
-        </tr>
-      </table>
-      <br>
-      <table>
-        <tr>
-          <th> Coverage Type </th>
-          <th> Effective Date </th>
-          <th> Minimum Earned Premium </th>
-          <th> Short Rate </th> 
-        </tr>
-        <tr>
-          <td><select id="id_pol_type" name="pol_type">
-<option value="" selected="selected"></option>
-<option value="1">Cargo</option>
-<option value="2">Windstorm</option>
-<option value="3">Truckers Auto</option>
-<option value="4">General Liability</option>
-</select></td>
-          <td><input id="id_pol_effective_date" name="pol_effective_date" type="text" /></td> <!-- Needs class 'hasDatePicker' -->
-          <td><input id="id_min_earned_premium" name="min_earned_premium" step="0.01" type="number" value="0" /></td>
-          <td><input id="id_short_rate" name="short_rate" type="checkbox" /></td>
-        </tr>
-      </table>
-      <br>
-      <table>
-        <tr>
-          <th> Total Premium </th>
-          <th> Doc Stamp Fees </th>
-          <th> Taxes </th>
-          <th> Broker Fees </th>
-        </tr>
-        <tr>
-          <td><input id="id_total_premium" name="total_premium" step="0.01" type="number" /></td>
-          <td><input id="id_doc_stamp_fees" name="doc_stamp_fees" step="0.01" type="number" /></td>
-          <td><input id="id_taxes" name="taxes" step="0.01" type="number" /></td>
-          <td><input id="id_broker_fees" name="broker_fees" step="0.01" type="number" /></td>
-        </tr>
-      </table>
-      <br>
-      <table>
-        <tr>
-          <td></td>
-          <td><input type="submit" name="submit" value="Add Policy" /></td>
-        </tr>
-      </table>
-      </form>
-      </div>
-    </div>
-  </div>
-  
-  <div id="terms">
-    <h1>Quote Terms</h1>
-    <form method="POST">
-    <input type="hidden" name="csrfmiddlewaretoken" value="s3PNw1mniJVL12Qv9h6r1OoAvRdKr3mM" />
-    <table id="quote" class="table">
-      <tr>
-        <td>Total Premium: $25,000.00</td>
-        <td>Down Payment: <br> $<input id="id_default_dp" name="default_dp" step="0.01" type="number" value="6250.00" /> 25.0%</td>
-        <td>Amount Financed: $ 18,750.00</td>
-      </tr>
-      <tr>
-        <td>First Due Date: <input id="id_first_due_date" name="first_due_date" type="text" value="2015-08-29" /></td>
-        <td>Number of Installments: <input id="id_num_of_install" min="0" name="num_of_install" type="number" value="9" /></td>
-        <td>Payment Schedule: <select id="id_payment_schedule" name="payment_schedule">
-<option value="Monthly" selected="selected">Monthly</option>
-<option value="Quarterly">Quarterly</option>
-<option value="Semi-annually">Semi-annually</option>
-</select></td>
-      </tr>
-      <tr>
-        <td>Interest Rate: 7.00% </td>
-        <td>Finance Charge: $ 551.13</td>
-        <td>Setup Fee: <input id="id_setup_fee" name="setup_fee" step="0.01" type="number" value="0.00" /></td>
-      </tr>
-      <tr>
-        <td>Payments: $ 2,144.57</td>
-        <td>Total of Payments: $ 19,301.13</td>
-        <td>Agency Compensation: $78.73</td>
-      </tr>
-      <tr>
-        <td>Override Minimums: <input id="id_override_mep" name="override_mep" type="checkbox" /></td>
-        <td>Equal Installments: <input id="id_equal_payments" name="equal_payments" type="checkbox" /></td>
-      </tr>
-    </table>
-    <input type="submit" name="submit" value="Edit Terms" />
-    </form>
-    
-    <h3>Interest Rate Detail</h3>
-    <div id="rateAccordion">  <!-- -->
-      <table id="rates" class="table">
         <form method="POST">
-        <input type="hidden" name="csrfmiddlewaretoken" value="s3PNw1mniJVL12Qv9h6r1OoAvRdKr3mM" />
-        <tr>
-          <td>Buy Rate: <input id="id_buy_rate" name="buy_rate" step="0.01" type="number" value="6.00" />%</td>
-          <td>Agency Compensation: <input id="id_agency_comp" name="agency_comp" step="0.01" type="number" value="1.00" />%</td>
-          <td>Broker Compensation: <input id="id_broker_comp" name="broker_comp" step="0.01" type="number" value="0.00" />%</td>
-          <td>Program Compensation: <input id="id_program_comp" name="program_comp" step="0.01" type="number" value="0.00" />%</td>
-        </tr>
-        <tr>
-          <td>$472.40</td>
-          <td>$78.73</td>
-          <td>$0.00</td>
-          <td>$0.00</td>
-        </tr>
-      <input type="submit" name="submit" value="Edit Rates" />
-      </form>
-      </table>
-    </div>
-  </div>
+          <input type="hidden" name="csrfmiddlewaretoken" value="s3PNw1mniJVL12Qv9h6r1OoAvRdKr3mM" />
+          <input type="submit" name="submit" value="Activate" />
+        </form>
+      </div>
+    </div> <!-- QUOTE TERMS -->
+  </div> <!--FORM BACKGROUND (QUOTE TERMS) -->
 
-  <div id="notes">
-    <h3>Notes</h3>
-    <form method="POST">
-    <input type="hidden" name="csrfmiddlewaretoken" value="s3PNw1mniJVL12Qv9h6r1OoAvRdKr3mM" />
-    <table>
-      
-        <tr>
-          <td> 7/30/2015 &nbsp &nbsp </td>
-          <td> Hoot &amp; holler </td>
-      <!-- Order these by time, only show date unless created today -->
-        </tr>
-      
-      <tr><td><input type="hidden" name="quote" id="quote" value="10" /></td></tr>
-    </table>
-    
-    <br>
-    <textarea id="note" name="note" cols="60" rows="4"></textarea>
-    <br>
-    
-    <input type="submit" name="submit" id="submit" value="Add Note" >
-    </form>
-  </div>
-  
-  <div id="analysis">
-    <h3>Analysis</h3>
-    <p>Graphs and such go here</p>
-    
-    <div style="height:200px;">
-      <div id="curve_chart"></div>
-      <div id="gauge_div"></div>
-      <!-- Try putting the JavaScript to create it below here so it can load
-        after the rest is loaded-->
-    </div>
-  </div>
-</div>
-
-<br>
-
-<div>
-  <form method="POST">
-    <input type="hidden" name="csrfmiddlewaretoken" value="s3PNw1mniJVL12Qv9h6r1OoAvRdKr3mM" />
-    <input type="submit" name="submit" value="Activate" />
-  </form>
-</div>
-
-</div> <!--"QUOTE TERMS -->
 </div> <!-- CONTAINER -->
 
   <script src="js/main.js"></script>

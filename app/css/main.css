@@ -5910,4 +5910,7 @@ h3 {
     border-radius: 2px;
     margin-right: 5px; }
 
+.quote-terms .hidden {
+  display: none; }
+
 /*# sourceMappingURL=main.css.map */

@@ -81,8 +81,6 @@ h3 {
   }
 }
 
-// FORMS:
-
 //FORM BACKGROUND
 .form-background {
   background: $light-grey;
@@ -141,6 +139,12 @@ h3 {
   }
 }
 
+//QUOTE TERMS
+.quote-terms {
+  .hidden {
+    display: none;
+  }
+}
 
 
 
