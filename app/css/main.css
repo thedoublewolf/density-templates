@@ -5820,11 +5820,30 @@ button.close {
 body {
   background: #E8F1F2; }
 
+.btn {
+  background: #265DAD;
+  color: #E8F1F2;
+  font-family: "Lato", sans-serif; }
+
+.btn:hover {
+  background: #3474d2;
+  color: #E8F1F2; }
+
 .navbar {
   background: white; }
-  .navbar li a {
-    color: #265DAD; }
   .navbar .navbar-brand img {
     width: 100px; }
+  .navbar ul.nav li a, .navbar ul.nav li a:visited {
+    color: #265DAD !important;
+    font-family: "Lato", sans-serif; }
+  .navbar ul.nav li a:hover, .navbar ul.nav li a:active {
+    color: #density-blue !important;
+    font-family: "Lato", sans-serif; }
+  .navbar ul.nav li.active a {
+    color: #density-blue !important;
+    font-family: "Lato", sans-serif; }
+  .navbar .navbar-form input {
+    width: 300px;
+    border-radius: 2px; }
 
 /*# sourceMappingURL=main.css.map */

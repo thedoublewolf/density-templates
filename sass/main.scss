@@ -1,5 +1,6 @@
 @import "bootstrap";
 
+// COLORS
 $density-blue: #265DAD;
 $density-grey: #A6A6A6;
 $light-grey: lighten(#A6A6A6, 60%);
@@ -8,16 +9,50 @@ $dark-blue: #373F51;
 $aqua-grey: #E8F1F2;
 $error-red: #E63946;
 
+// FONTS
+$lato: 'Lato', sans-serif;
+
 body {
   background: $aqua-grey;
 }
 
+// BUTTON OVERRIDE
+.btn {
+  background: $density-blue;
+  color: $aqua-grey;
+  font-family: $lato;
+}
+.btn:hover {
+  background: lighten($density-blue, 10%);
+  color: $aqua-grey;
+}
+
+// NAVBAR OVERRIDE
 .navbar {
   background: $light-grey;
-  li a {
-    color: $density-blue;
-  }
   .navbar-brand img {
     width: 100px;
+  }
+
+  // NAVBAR FONT COLOR OVERRIDE
+  ul.nav li a, ul.nav li a:visited {
+      color: $density-blue !important;
+      font-family: $lato;
+  }
+
+  ul.nav li a:hover, ul.nav li a:active {
+      color: #density-blue !important;
+      font-family: $lato;
+  }
+
+  ul.nav li.active a {
+      color: #density-blue !important;
+      font-family: $lato;
+  }
+
+  // SEARCH OVERRIDE
+  .navbar-form input {
+    width: 300px;
+    border-radius: 2px;
   }
 }
