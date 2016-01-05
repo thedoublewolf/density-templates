@@ -5828,6 +5828,10 @@ h2 {
   color: #373F51;
   font-family: "Lato", sans-serif; }
 
+h3 {
+  color: #373F51;
+  font-family: "Lato", sans-serif; }
+
 .btn {
   background: #275DAD;
   color: #E8F1F2;
@@ -5838,7 +5842,10 @@ h2 {
   color: #E8F1F2; }
 
 .navbar {
-  background: white; }
+  background: white;
+  box-shadow: 0 0 10px #373F51;
+  border-radius: 0;
+  padding-bottom: 5px; }
   .navbar .navbar-brand img {
     width: 100px; }
   .navbar ul.nav li a, .navbar ul.nav li a:visited {
@@ -5853,6 +5860,10 @@ h2 {
   .navbar .navbar-form input {
     width: 300px;
     border-radius: 2px; }
+
+.form-background {
+  background: white;
+  padding-left: 20px; }
 
 .login {
   width: 350px; }

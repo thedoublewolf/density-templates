@@ -25,6 +25,10 @@ h2 {
   color: $dark-blue;
   font-family: $lato;
 }
+h3 {
+  color: $dark-blue;
+  font-family: $lato;
+}
 
 // BUTTON OVERRIDE
 .btn {
@@ -40,6 +44,9 @@ h2 {
 // NAVBAR OVERRIDE
 .navbar {
   background: $light-grey;
+  box-shadow: 0 0 10px $dark-blue;
+  border-radius: 0;
+  padding-bottom: 5px;
   .navbar-brand img {
     width: 100px;
   }
@@ -69,6 +76,12 @@ h2 {
 
 // FORMS:
 
+//FORM BACKGROUND
+.form-background {
+  background: $light-grey;
+  padding-left: 20px;
+}
+
 //LOGIN FORM
 .login {
   width: 350px;
@@ -84,3 +97,12 @@ h2 {
     color: $link-mint;
   }
 }
+
+//NEW QUOTE FORM
+.new-quote {
+
+}
+
+
+
+

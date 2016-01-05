@@ -69,6 +69,62 @@
     <a href="/password_reset/">Forgot your password?</a>
   </form>
 
+  <hr>
+
+  <!-- NEW QUOTE FORM -->
+  <div class="form-background">
+    <h1>Enter a new quote</h1>
+<form method="POST" class="input-group new-quote">
+  <input type="hidden" name="csrfmiddlewaretoken" value="s3PNw1mniJVL12Qv9h6r1OoAvRdKr3mM" />
+
+  <div>
+    Agency
+    <br>
+    <select id="id_agency" name="agency" onchange="ajaxSearch();">
+      <option value="" selected="selected"></option>
+      <option value="1">ABC Insurance</option>
+      <option value="2">Albo&#39;s Insurance</option>
+    </select>
+  </div>
+
+  <div>
+    Insured
+    <br>
+    <select id="id_insured" name="insured">
+      <option value="" selected="selected"></option>
+      <option value="1">AAA Locksmith LLC</option>
+    </select>
+  </div>
+
+  <div>
+    <h3>Policy 1</h3>
+    <p><label for="id_carrier">Carrier:</label> 
+    <select id="id_carrier" name="carrier">
+    <option value="" selected="selected"></option>
+    <option value="1">Carrier ABC</option>
+    <option value="2">Carrier XYZ</option>
+  </select></p>
+<p><label for="id_pol_type">Pol type:</label> <select id="id_pol_type" name="pol_type">
+<option value="" selected="selected"></option>
+<option value="1">Cargo</option>
+<option value="2">Windstorm</option>
+<option value="3">Truckers Auto</option>
+<option value="4">General Liability</option>
+</select></p>
+<p><label for="id_total_premium">Total premium:</label> <input id="id_total_premium" name="total_premium" step="0.01" type="number" /></p>
+<p><label for="id_pol_effective_date">Pol effective date:</label> <input id="id_pol_effective_date" name="pol_effective_date" type="text" /></p>
+<p><label for="id_short_rate">Short rate:</label> <input id="id_short_rate" name="short_rate" type="checkbox" /></p>
+<p><label for="id_min_earned_premium">Min earned premium:</label> <input id="id_min_earned_premium" name="min_earned_premium" step="0.01" type="number" value="0" /></p>
+<p><label for="id_doc_stamp_fees">Doc stamp fees:</label> <input id="id_doc_stamp_fees" name="doc_stamp_fees" step="0.01" type="number" /></p>
+<p><label for="id_taxes">Taxes:</label> <input id="id_taxes" name="taxes" step="0.01" type="number" /></p>
+<p><label for="id_broker_fees">Broker fees:</label> <input id="id_broker_fees" name="broker_fees" step="0.01" type="number" /></p>
+  </div>
+  <br>
+  <div>
+    <input type="submit" name="start_quote" id="submit" value="Start Quote" >
+  </div>
+</form>
+  </div>
 </div>
 
   <script src="js/main.js"></script>
