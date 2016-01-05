@@ -1,1 +1,23 @@
 @import "bootstrap";
+
+$density-blue: #265DAD;
+$density-grey: #A6A6A6;
+$light-grey: lighten(#A6A6A6, 60%);
+$link-mint: #58A3AF;
+$dark-blue: #373F51;
+$aqua-grey: #E8F1F2;
+$error-red: #E63946;
+
+body {
+  background: $aqua-grey;
+}
+
+.navbar {
+  background: $light-grey;
+  li a {
+    color: $density-blue;
+  }
+  .navbar-brand img {
+    width: 100px;
+  }
+}

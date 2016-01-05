@@ -5817,4 +5817,14 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
+body {
+  background: #E8F1F2; }
+
+.navbar {
+  background: white; }
+  .navbar li a {
+    color: #265DAD; }
+  .navbar .navbar-brand img {
+    width: 100px; }
+
 /*# sourceMappingURL=main.css.map */
