@@ -16,6 +16,10 @@ body {
   background: $aqua-grey;
 }
 
+.container {
+  margin: 40px auto;
+}
+
 // HEADERS
 h1 {
   color: $density-blue;
@@ -84,11 +88,12 @@ h3 {
   background: $light-grey;
   padding-left: 20px;
   padding-top: 5px;
-  padding-bottom: 50px;
+  padding-bottom: 40px;
 }
 
 //LOGIN FORM
 .login {
+  margin: 0 auto;
   width: 350px;
   .form-control {
     width: 300px;
@@ -105,6 +110,8 @@ h3 {
 
 //NEW QUOTE FORM
 .new-quote {
+  margin: 0 auto;
+  width: 500px;
   label {
     font-weight: 400;
   }
@@ -126,6 +133,11 @@ h3 {
     width: 405px;
     margin-top: 10px;
     text-align: center;
+  }
+  .form-control {
+    width: 280px;
+    border-radius: 2px;
+    margin-right: 5px;
   }
 }
 

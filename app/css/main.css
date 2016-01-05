@@ -5820,6 +5820,9 @@ button.close {
 body {
   background: #E8F1F2; }
 
+.container {
+  margin: 40px auto; }
+
 h1 {
   color: #275DAD;
   font-family: "Lato", sans-serif;
@@ -5868,9 +5871,10 @@ h3 {
   background: white;
   padding-left: 20px;
   padding-top: 5px;
-  padding-bottom: 50px; }
+  padding-bottom: 40px; }
 
 .login {
+  margin: 0 auto;
   width: 350px; }
   .login .form-control {
     width: 300px;
@@ -5881,26 +5885,29 @@ h3 {
   .login a {
     color: #58A3AF; }
 
-.new-quote label {
-  font-weight: 400; }
-
-.new-quote .form-inputs {
+.new-quote {
+  margin: 0 auto;
   width: 500px; }
-
-.new-quote .input-left {
-  width: 150px;
-  display: inline-block;
-  text-align: right;
-  padding-right: 10px; }
-
-.new-quote .input-right {
-  width: 200px;
-  display: inline-block;
-  text-align: left; }
-
-.new-quote .form-submit {
-  width: 405px;
-  margin-top: 10px;
-  text-align: center; }
+  .new-quote label {
+    font-weight: 400; }
+  .new-quote .form-inputs {
+    width: 500px; }
+  .new-quote .input-left {
+    width: 150px;
+    display: inline-block;
+    text-align: right;
+    padding-right: 10px; }
+  .new-quote .input-right {
+    width: 200px;
+    display: inline-block;
+    text-align: left; }
+  .new-quote .form-submit {
+    width: 405px;
+    margin-top: 10px;
+    text-align: center; }
+  .new-quote .form-control {
+    width: 280px;
+    border-radius: 2px;
+    margin-right: 5px; }
 
 /*# sourceMappingURL=main.css.map */
