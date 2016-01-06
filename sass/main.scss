@@ -13,7 +13,11 @@ $error-red: #E63946;
 $lato: 'Lato', sans-serif;
 
 body {
-  background: $aqua-grey;
+  background: $density-grey;
+}
+
+hr {
+  border: 1px solid $density-grey;
 }
 
 .container {

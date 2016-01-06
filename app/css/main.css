@@ -5818,7 +5818,10 @@ button.close {
     display: none !important; } }
 
 body {
-  background: #E8F1F2; }
+  background: #A6A6A6; }
+
+hr {
+  border: 1px solid #A6A6A6; }
 
 .container {
   margin: 40px auto; }
