@@ -72,10 +72,6 @@
     </form>
   </div>
 
-  <!-- Datepicker -->
-  <h2 class="demoHeaders">Datepicker</h2>
-  <div id="datepicker"></div>
-
   <hr> <!-- this is seperating each template -->
 
   <!-- NEW QUOTE FORM -->
@@ -87,20 +83,22 @@
 
       <div class="form-inputs">
 
-      <input type="hidden" name="csrfmiddlewaretoken" value="s3PNw1mniJVL12Qv9h6r1OoAvRdKr3mM" />
+        <input type="hidden" name="csrfmiddlewaretoken" value="s3PNw1mniJVL12Qv9h6r1OoAvRdKr3mM" />
 
-      <label for="id_agency" class="input-left">Agency:</label>
-      <select id="id_agency" name="agency" onchange="ajaxSearch();" class="input-right">
-        <option value="" selected="selected"></option>
-        <option value="1">ABC Insurance</option>
-        <option value="2">Albo&#39;s Insurance</option>
-      </select>
+        <label for="id_agency" class="input-left">Agency</label>
+        <select id="id_agency" name="agency" onchange="ajaxSearch();" class="input-right">
+          <option value="" selected="selected"></option>
+          <option value="1">ABC Insurance</option>
+          <option value="2">Albo&#39;s Insurance</option>
+        </select>
 
-      <label for="id_insured" class="input-left">Insured:</label>
-      <select id="id_insured" name="insured" class="input-right">
-        <option value="" selected="selected"></option>
-        <option value="1">AAA Locksmith LLC</option>
-      </select>
+        <label for="id_insured" class="input-left">Insured</label>
+        <select id="id_insured" name="insured" class="input-right">
+          <option value="" selected="selected"></option>
+          <option value="1">AAA Locksmith LLC</option>
+        </select>
+        <div class="input-left"></div>
+        <a class="input-right" href="#">Create new insured</a>
 
         <h3>Policy 1</h3>
 
@@ -109,6 +107,10 @@
           <option value="" selected="selected"></option>
           <option value="1">Carrier ABC</option>
           <option value="2">Carrier XYZ</option>
+        </select>
+        <label for="id_general_agent" class="input-left">General agent:</label>
+        <select class="input-right">
+          <option value="" selected="selected"></option>
         </select>
 
         <label for="id_pol_type" class="input-left">Pol type:</label>
@@ -120,26 +122,44 @@
           <option value="4">General Liability</option>
         </select>
 
-        <label for="id_total_premium" class="input-left">Total premium:</label>
-        <input id="id_total_premium" name="total_premium" step="0.01" type="number" class="input-right"/>
+        <label class="input-left">Policy number:</label>
+        <input type="text" class="input-right" value="TBD"/>
 
         <label for="id_pol_effective_date" class="input-left">Pol effective date:</label> 
-        <input id="id_pol_effective_date" name="pol_effective_date" type="text" class="input-right"/>
-
-        <label for="id_short_rate" class="input-left">Short rate:</label> 
-        <input id="id_short_rate" name="short_rate" type="checkbox" class="input-right"/>
+        <input type="text" id="datepicker" class="input-right"/>
 
         <label for="id_min_earned_premium" class="input-left">Min earned premium:</label> 
         <input id="id_min_earned_premium" name="min_earned_premium" step="0.01" type="number" value="0" class="input-right"/>
 
-        <label for="id_doc_stamp_fees" class="input-left">Doc stamp fees:</label> 
-        <input id="id_doc_stamp_fees" name="doc_stamp_fees" step="0.01" type="number" class="input-right"/>
+        <label for="id_short_rate" class="input-left">Short rate:</label> 
+        <input id="id_short_rate" name="short_rate" type="checkbox" class="input-right"/>
+
+        <label class="input-left">Auditable:</label>
+        <input type="checkbox" class="input-right"/>
+
+        <label class="input-left">Filings:</label>
+        <input type="checkbox" class="input-right"/>
+
+        <label class="input-left">Days to cancel:</label>
+        <input step="1" type="number" class="input-right" value="0"/>
+
+        <label class="input-left">Send notice to state authority:</label>
+        <input type="checkbox" class="input-right"/>
+
+        <label for="id_total_premium" class="input-left">Total premium:</label>
+        <input id="id_total_premium" name="total_premium" step="0.01" type="number" class="input-right"/>
 
         <label for="id_taxes" class="input-left">Taxes:</label> 
         <input id="id_taxes" name="taxes" step="0.01" type="number" class="input-right"/> 
 
-        <label for="id_broker_fees" class="input-left">Broker fees:</label> 
-        <input id="id_broker_fees" name="broker_fees" step="0.01" type="number" class="input-right"/> 
+        <label class="input-left">Policy fee:</label>
+        <input step="0.01" type="number" class="input-right" vlaue="0"/>
+
+        <label for="id_broker_fees" class="input-left" value="0">Broker fees:</label> 
+        <input name="broker_fees" step="0.01" type="number" class="input-right" value="0"/>
+
+        <label class="input-left">All other fees:</label> 
+        <input step="0.01" type="number" class="input-right"/>  
 
       </div>
 

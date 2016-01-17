@@ -66,16 +66,19 @@ h3 {
   ul.nav li a, ul.nav li a:visited {
       color: $density-blue !important;
       font-family: $lato;
+      font-size: 1.2em;
   }
 
   ul.nav li a:hover, ul.nav li a:active {
       color: #density-blue !important;
       font-family: $lato;
+      font-size: 1.2em;
   }
 
   ul.nav li.active a {
       color: #density-blue !important;
       font-family: $lato;
+      font-size: 1.2em;
   }
 
   // SEARCH OVERRIDE
@@ -115,7 +118,19 @@ h3 {
   margin: 0 auto;
   width: 500px;
   label {
-    font-weight: 400;
+    font-weight: bold;
+  }
+  a {
+    color: $link-mint;
+  }
+  input {
+    padding: 5px;
+  }
+  select {
+    height: 25px;
+    padding: 5px;
+    border-radius: 0px;
+    background: transparent;
   }
   .form-inputs {
     width: 500px;
@@ -125,11 +140,13 @@ h3 {
     display: inline-block;
     text-align: right;
     padding-right: 10px;
+    margin-bottom: 10px;
   }
   .input-right {
     width: 200px;
     display: inline-block;
     text-align: left;
+    margin-bottom: 10px;
   }
   .form-submit {
     width: 405px;

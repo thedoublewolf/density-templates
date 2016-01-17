@@ -11,9 +11,7 @@ require('jquery-ui');
 
 require('bootstrap-sass');
 
-(0, _jquery2['default'])("#datepicker").datepicker({
-  inline: true
-});
+(0, _jquery2['default'])("#datepicker").datepicker({});
 
 },{"bootstrap-sass":2,"jquery":4,"jquery-ui":3}],2:[function(require,module,exports){
 /*!
