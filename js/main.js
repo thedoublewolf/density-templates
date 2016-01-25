@@ -4,3 +4,7 @@ import 'bootstrap-sass';
 
 $( "#datepicker" ).datepicker({
 });
+
+$( "#tabs" ).tabs();
+
+$( "#accordion" ).accordion();

@@ -39,6 +39,7 @@ h3 {
   color: $dark-blue;
   font-family: $lato;
   margin-bottom: 20px;
+  margin: 0;
 }
 
 // BUTTON OVERRIDE
@@ -91,6 +92,8 @@ h3 {
 //FORM BACKGROUND
 .form-background {
   background: $light-grey;
+  min-width: 800px;
+  border: 1px solid red;
   padding-left: 20px;
   padding-top: 5px;
   padding-bottom: 40px;
@@ -116,37 +119,29 @@ h3 {
 //NEW QUOTE FORM
 .new-quote {
   margin: 0 auto;
-  width: 500px;
+  border: 1px solid red;
+  width: 700px;
   label {
     font-weight: bold;
+    display: inline-block;
   }
   a {
     color: $link-mint;
   }
-  input {
-    padding: 5px;
-  }
+  // input {
+  //   padding: 5px;
+  //   margin-right: 10px;
+  //   display: inline-block;
+  // }
   select {
     height: 25px;
     padding: 5px;
+    margin-right: 10px;
     border-radius: 0px;
     background: transparent;
   }
-  .form-inputs {
-    width: 500px;
-  }
-  .input-left {
-    width: 150px;
-    display: inline-block;
-    text-align: right;
-    padding-right: 10px;
-    margin-bottom: 10px;
-  }
-  .input-right {
-    width: 200px;
-    display: inline-block;
-    text-align: left;
-    margin-bottom: 10px;
+  .form-row {
+    margin: 5px;
   }
   .form-submit {
     width: 405px;
@@ -154,17 +149,25 @@ h3 {
     text-align: center;
   }
   .form-control {
-    width: 280px;
+    padding: 5px;
+    margin-right: 10px;
+    display: inline-block;
+    width: 100px;
     border-radius: 2px;
     margin-right: 5px;
+  }
+  .form-section {
+    background: #F7F7F9;
+    border-bottom: 1px solid #DDDDDD;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 }
 
 //QUOTE TERMS
 .quote-terms {
-  .hidden {
-    display: none;
-  }
+  margin-left: 10px;
+  margin-right: 20px;
 }
 
 

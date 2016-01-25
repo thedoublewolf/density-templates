@@ -13,6 +13,10 @@ require('bootstrap-sass');
 
 (0, _jquery2['default'])("#datepicker").datepicker({});
 
+(0, _jquery2['default'])("#tabs").tabs();
+
+(0, _jquery2['default'])("#accordion").accordion();
+
 },{"bootstrap-sass":2,"jquery":4,"jquery-ui":3}],2:[function(require,module,exports){
 /*!
  * Bootstrap v3.3.6 (http://getbootstrap.com)
